@@ -25,7 +25,9 @@ let animals = [
 function listen(animals) {
     let sounds = '';
 
-    
+animals.push(new Cat());
+    animals.push(new Dog());
+    animals.push(new Bird());    
 
     animals.forEach((animals) => {
         sounds += `${animals.say()}`
