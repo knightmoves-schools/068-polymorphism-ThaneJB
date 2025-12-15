@@ -25,12 +25,8 @@ let animals = [
 function listen(animals) {
     let sounds = [];
 
-    animals.push(new Cat('meow'));
-    animals.push(new Dog('woof'));
-    animals.push(new Bird('chirp'));    
-
     animals.forEach((animals) => {
-        sounds += `${animals.say()}`
+        sounds.push(animals.say())
     });
 
     
